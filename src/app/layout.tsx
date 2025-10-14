@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://canadian-orange-party.example.com"),
+  metadataBase: new URL("http://www.CanadianOrangeParty.com"),
   title: {
     default: "Canadian Orange Party",
     template: "%s · Canadian Orange Party",
@@ -83,7 +83,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Canadian Orange Party",
-              url: "https://canadian-orange-party.example.com/",
+              url: "http://www.CanadianOrangeParty.com/",
               sameAs: [
                 "https://primal.net/p/nprofile1qqstmq34sjd7m600yzkrvfafjwfzeyuttckgmd5xx7556gvc0h7cv4gtrw7pp",
               ],
@@ -98,11 +98,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Canadian Orange Party",
-              url: "https://canadian-orange-party.example.com/",
+              url: "http://www.CanadianOrangeParty.com/",
               potentialAction: {
                 "@type": "SearchAction",
                 target:
-                  "https://canadian-orange-party.example.com/?q={search_term_string}",
+                  "http://www.CanadianOrangeParty.com/?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
