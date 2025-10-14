@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s · Canadian Orange Party",
   },
   description:
-    "Canadian Orange Party — a community hub around the Canadian Bitcoin Conference. Connect on Nostr and find info related to Canada Bitcoin, Canadian Bitcoin Conference, and Canadian Orange Party.",
+    "Fix the money. Fix Canada.",
   keywords: [
     "Canadian Bitcoin Conference",
     "Canada Bitcoin Conference",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: "en_CA",
     title: "Canadian Orange Party",
     description:
-      "Canadian Orange Party — community around the Canadian Bitcoin Conference. Canada Bitcoin, Canadian Bitcoin Conference, Canadian Orange Party.",
+      "Fix the money. Fix Canada.",
     images: [
       {
         url: "https://i.nostr.build/mt5lXdK20ge85YW9.png",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Canadian Orange Party",
     description:
-      "Fix the money. Fix Canada. A movement that transcends politics. Bitcoin is our monetary layer. NOSTR is our comms layer. This is our coordination layer Est. 916,094",
+      "Fix the money. Fix Canada. A movement that transcends politics. Bitcoin is our monetary layer. NOSTR is our comms layer. Est. 916,094",
     images: ["https://i.nostr.build/mt5lXdK20ge85YW9.png"],
   },
   robots: {
