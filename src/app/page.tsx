@@ -12,6 +12,9 @@ export default function Home() {
         <h1 className={`${greatVibes.className} text-[2.8rem] md:text-[3.7rem] text-orange-500 whitespace-nowrap transition-all duration-300 peer-hover:drop-shadow-[0_0_18px_rgba(255,140,0,0.75)]`}>
           Canadian Orange Party
         </h1>
+        <h3 className={`${greatVibes.className} text-[1.5rem] md:text-[2.5rem] text-orange-500 whitespace-nowrap transition-all duration-300 peer-hover:drop-shadow-[0_0_18px_rgba(255,140,0,0.75)]`}>
+          Fix the money. Fix Canada.
+        </h3>
         
         {/* Maple Leaf Image */}
         <div className="relative transition-all duration-300 peer-hover:drop-shadow-[0_0_26px_rgba(255,140,0,0.6)]">
