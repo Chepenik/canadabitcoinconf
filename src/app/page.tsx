@@ -6,10 +6,10 @@ const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-black">
+    <div className="min-h-screen flex flex-col items-center justify-center p-8">
       <main className="flex flex-col items-center text-center space-y-12">
         {/* Title */}
-        <h1 className={`${greatVibes.className} text-4xl md:text-5xl text-orange-500 whitespace-nowrap transition-all duration-300 peer-hover:drop-shadow-[0_0_18px_rgba(255,140,0,0.75)]`}>
+        <h1 className={`${greatVibes.className} text-[2.8rem] md:text-[3.7rem] text-orange-500 whitespace-nowrap transition-all duration-300 peer-hover:drop-shadow-[0_0_18px_rgba(255,140,0,0.75)]`}>
           Canadian Orange Party
         </h1>
         
@@ -18,8 +18,8 @@ export default function Home() {
           <Image
             src="/finalmapleleaf.png"
             alt="Maple Leaf"
-            width={200}
-            height={200}
+            width={170}
+            height={170}
             className="rounded-lg"
             priority
           />
