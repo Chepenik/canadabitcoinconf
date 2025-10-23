@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 import { Great_Vibes, VT323 } from "next/font/google";
 
 const greatVibes = Great_Vibes({ weight: "400", subsets: ["latin"] });
@@ -8,37 +8,20 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
       <main className="flex flex-col items-center text-center space-y-12">
-        {/* Title */}
-        <h1 className={`${greatVibes.className} text-[2.8rem] md:text-[3.7rem] text-orange-500 whitespace-nowrap transition-all duration-300 peer-hover:drop-shadow-[0_0_18px_rgba(255,140,0,0.75)]`}>
+        <h1
+          className={`${greatVibes.className} text-[2.8rem] md:text-[3.7rem] text-orange-500 whitespace-nowrap transition-all duration-300`}
+        >
           Canadian Orange Party
         </h1>
-        <h3 className={`${greatVibes.className} text-[1.5rem] md:text-[2.5rem] text-orange-500 whitespace-nowrap transition-all duration-300 peer-hover:drop-shadow-[0_0_18px_rgba(255,140,0,0.75)]`}>
-          Fix the money. Fix Canada.
+
+        <h3 className={`${vt323.className} text-orange-500 text-lg md:text-xl`}>
+          Since 916,094
         </h3>
-        
-        {/* Maple Leaf Image */}
-        <div className="relative transition-all duration-300 peer-hover:drop-shadow-[0_0_26px_rgba(255,140,0,0.6)]">
-          <Image
-            src="/finalmapleleaf.png"
-            alt="Maple Leaf"
-            width={170}
-            height={170}
-            className="rounded-lg"
-            priority
-          />
-        </div>
-        
-        {/* Clickable NPUB */}
-        <div className="relative grid place-items-center">
-          <a
-            href="https://primal.net/p/nprofile1qqstmq34sjd7m600yzkrvfafjwfzeyuttckgmd5xx7556gvc0h7cv4gtrw7pp"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${vt323.className} peer relative z-10 px-4 py-3 rounded-lg text-orange-500 hover:text-orange-400 transition-all duration-300 text-lg md:text-xl break-all max-w-2xl shadow-[0_0_18px_rgba(255,140,0,0.35)] hover:shadow-[0_0_36px_rgba(255,140,0,0.7)] hover:scale-105 border border-orange-500/40`}
-          >
-            npub1hkprtpymah577g9vxcn6nyuj9jfckh3v3kmgvdaff5sesl0ase2sqn6jqu
-          </a>
-        </div>
+
+        <a href="/main" className={`enter-link ${vt323.className} text-orange-500 text-2xl md:text-3xl`}>
+        Enter
+      </a>
+
       </main>
     </div>
   );
