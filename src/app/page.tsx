@@ -14,11 +14,11 @@ export default function Home() {
           Canadian Orange Party
         </h1>
 
-        <h3 className={`${vt323.className} text-orange-500 text-lg md:text-xl`}>
+        <h3 className={`${greatVibes.className} text-gray-600 text-lg md:text-xl`}>
           Since 916,094
         </h3>
 
-        <a href="/main" className={`enter-link ${vt323.className} text-orange-500 text-2xl md:text-3xl`}>
+        <a href="/donors" className={`enter-link ${vt323.className} text-orange-500 text-2xl md:text-3xl`}>
         Enter
       </a>
 

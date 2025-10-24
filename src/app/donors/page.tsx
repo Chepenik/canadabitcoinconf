@@ -13,26 +13,12 @@ export default function Donors() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
       <main className="flex flex-col items-center text-center space-y-12">
-        {/* Title */}
         <h1
           className={`${greatVibes.className} text-[2.8rem] md:text-[3.7rem] text-orange-500 whitespace-nowrap transition-all duration-300`}
         >
           Donors
         </h1>
 
-        {/* Maple Leaf Image */}
-        <div className="relative transition-all duration-300">
-          <Image
-            src="/finalmapleleaf.png"
-            alt="Maple Leaf"
-            width={170}
-            height={170}
-            className="rounded-lg"
-            priority
-          />
-        </div>
-
-        {/* Support with Sats Button */}
         <button
           onClick={() => setShowModal(true)}
           className={`${vt323.className} px-8 py-4 bg-orange-500 hover:bg-orange-400 text-white text-xl md:text-2xl rounded-lg transition-all duration-300 shadow-[0_0_18px_rgba(255,140,0,0.35)] hover:shadow-[0_0_36px_rgba(255,140,0,0.7)] hover:scale-105 flex items-center space-x-2`}
@@ -42,8 +28,7 @@ export default function Donors() {
           <span className="text-orange-500">₿</span>
         </button>
 
-        {/* Continue Button */}
-        <Link href="/hub">
+        <Link href="/main">
           <button
             className={`${vt323.className} px-8 py-4 bg-transparent border-2 border-orange-500 hover:bg-orange-500 text-orange-500 hover:text-white text-xl md:text-2xl rounded-lg transition-all duration-300 shadow-[0_0_18px_rgba(255,140,0,0.35)] hover:shadow-[0_0_36px_rgba(255,140,0,0.7)] hover:scale-105`}
           >
@@ -52,7 +37,6 @@ export default function Donors() {
         </Link>
       </main>
 
-      {/* Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
           <div
@@ -79,7 +63,6 @@ export default function Donors() {
               npub1hkprtpymah577g9vxcn6nyuj9jfckh3v3kmgvdaff5sesl0ase2sqn6jqu
             </a>
 
-            {/* Close Button */}
             <div className="mt-8">
               <button
                 onClick={() => setShowModal(false)}

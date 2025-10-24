@@ -41,7 +41,7 @@ export default function Main() {
           </a>
         </div>
         
-        <Link href="/donors">
+        <Link href="/hub">
           <button className={`${vt323.className} px-8 py-4 bg-transparent border-2 border-orange-500 hover:bg-orange-500 text-orange-500 hover:text-white text-xl md:text-2xl rounded-lg transition-all duration-300 shadow-[0_0_18px_rgba(255,140,0,0.35)] hover:shadow-[0_0_36px_rgba(255,140,0,0.7)] hover:scale-105`}>
             Continue
           </button>
