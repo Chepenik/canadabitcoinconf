@@ -20,12 +20,11 @@ export default function Home() {
           </h3>
         </div>
 
-        <a
-          href="/donors"
-          className={`${vt323.className} text-orange-500 text-3xl md:text-4xl hover:text-orange-400 transition-all duration-300`}
-        >
-          Enter
+        <a href="/donors" className={`enter-link ${vt323.className} text-orange-500`}>
+          <span className="enter-label">Enter</span>
         </a>
+
+
       </main>
     </div>
   );
