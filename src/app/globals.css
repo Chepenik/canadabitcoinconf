@@ -2,12 +2,8 @@
 
 :root {
   --background: #0c0b09;
-  --foreground: #f5f5f5;
 }
 
-html {
-  color-scheme: light;
-}
 html.dark {
   color-scheme: dark;
 }
@@ -19,7 +15,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* clickable area (padding) lives on the link */
 .enter-link {
   position: relative;
   display: inline-flex;
@@ -27,31 +22,28 @@ body {
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 1rem 2rem;         /* big hit area, not part of underline */
+  padding: 1rem 2rem;       
   transition: transform .3s ease;
 }
 
-/* the visible word + underline live on the label span */
 .enter-label {
   position: relative;
   display: inline-block;
   line-height: 1;
-  transform: scale(2);        /* keep the large text size */
+  transform: scale(2);      
   transform-origin: center;
 }
 
-/* keep the underline tight to the word */
 .enter-label::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;               /* snug under the baseline */
-  width: 0;                   /* start hidden */
-  height: 0.12em;             /* scales with text size */
+  bottom: -2px;         
+  width: 0;   
+  height: 0.12em;            
   background-color: currentColor;
   transition: width .25s ease;
 }
 
-/* animate only across the word, not the padded area */
 .enter-link:hover .enter-label::after { width: 100%; }
 

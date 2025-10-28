@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Great_Vibes, VT323 } from "next/font/google";
 
 const greatVibes = Great_Vibes({ weight: "400", subsets: ["latin"] });
@@ -20,7 +19,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <a href="/donors" className={`enter-link ${vt323.className} text-orange-500`}>
+        <a href="/hub" className={`enter-link ${vt323.className} text-orange-500`}>
           <span className="enter-label">Enter</span>
         </a>
 
