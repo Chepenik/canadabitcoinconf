@@ -24,8 +24,6 @@ const ONCHAIN_QR = "https://i.nostr.build/pyGFcBtbtS8lut0Z.jpg";
 const LIGHTNING_ADDR = "wildkangaroo21@primal.net";
 const LIGHTNING_QR = "https://i.nostr.build/xqRzAugn6Pa3B2LE.png";
 
-const GITHUB_BASE = "https://github.com/Canadian-Orange-Party/governanceOS/tree/main";
-
 async function copyToClipboard(text: string) {
   try {
     if (navigator?.clipboard?.writeText) {
@@ -65,7 +63,6 @@ export default function Hub() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
       <main className="flex flex-col items-center text-center space-y-8 max-w-[1200px] w-full">
-        {/* Maple Leaf */}
         <div className="relative transition-all duration-300">
           <a href="/">
             <Image
@@ -79,9 +76,7 @@ export default function Hub() {
           </a>
         </div>
 
-        {/* Buttons in correct order */}
         <div className="w-full">
-          {/* Mobile */}
           <div className="grid grid-cols-1 md:hidden gap-4">
             <button
               onClick={() => setShowNostr(true)}
@@ -99,7 +94,7 @@ export default function Hub() {
               donate
             </button>
 
-            <Link href={GITHUB_BASE}>
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
               <button
                 className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
@@ -108,7 +103,7 @@ export default function Hub() {
               </button>
             </Link>
 
-            <Link href={GITHUB_BASE}>
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_4_Meetings">
               <button
                 className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
@@ -117,7 +112,7 @@ export default function Hub() {
               </button>
             </Link>
 
-            <Link href={GITHUB_BASE}>
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_2_Proposals">
               <button
                 className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
@@ -126,7 +121,7 @@ export default function Hub() {
               </button>
             </Link>
 
-            <Link href={GITHUB_BASE}>
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_3_Projects">
               <button
                 className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
@@ -136,7 +131,6 @@ export default function Hub() {
             </Link>
           </div>
 
-          {/* Tablet */}
           <div className="hidden md:grid lg:hidden grid-cols-2 gap-4">
             <button
               onClick={() => setShowNostr(true)}
@@ -153,19 +147,40 @@ export default function Hub() {
               donate
             </button>
 
-            {[ "protocols", "meetings", "proposals", "projects" ].map((label) => (
-              <Link key={label} href={GITHUB_BASE}>
-                <button
-                  className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
-                  style={BTN_STYLE}
-                >
-                  {label}
-                </button>
-              </Link>
-            ))}
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
+              <button
+                className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                style={BTN_STYLE}
+              >
+                protocols
+              </button>
+            </Link>
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_4_Meetings">
+              <button
+                className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                style={BTN_STYLE}
+              >
+                meetings
+              </button>
+            </Link>
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_2_Proposals">
+              <button
+                className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                style={BTN_STYLE}
+              >
+                proposals
+              </button>
+            </Link>
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_3_Projects">
+              <button
+                className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                style={BTN_STYLE}
+              >
+                projects
+              </button>
+            </Link>
           </div>
 
-          {/* Desktop */}
           <div className="hidden lg:block">
             <div className="grid grid-cols-3 gap-4 mb-4">
               <button
@@ -182,7 +197,7 @@ export default function Hub() {
               >
                 donate
               </button>
-              <Link href={GITHUB_BASE}>
+              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
                 <button
                   className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
                   style={BTN_STYLE}
@@ -193,22 +208,35 @@ export default function Hub() {
             </div>
 
             <div className="grid grid-cols-3 gap-4">
-              {[ "meetings", "proposals", "projects" ].map((label) => (
-                <Link key={label} href={GITHUB_BASE}>
-                  <button
-                    className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
-                    style={BTN_STYLE}
-                  >
-                    {label}
-                  </button>
-                </Link>
-              ))}
+              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_4_Meetings">
+                <button
+                  className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                  style={BTN_STYLE}
+                >
+                  meetings
+                </button>
+              </Link>
+              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_2_Proposals">
+                <button
+                  className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                  style={BTN_STYLE}
+                >
+                  proposals
+                </button>
+              </Link>
+              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_3_Projects">
+                <button
+                  className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                  style={BTN_STYLE}
+                >
+                  projects
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </main>
 
-      {/* NOSTR Modal */}
       {showNostr && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
@@ -245,7 +273,6 @@ export default function Hub() {
         </div>
       )}
 
-      {/* DONATE Modal */}
       {showDonate && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 md:p-8"
@@ -269,7 +296,6 @@ export default function Hub() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* On-chain */}
               <div className="rounded-2xl border border-orange-500/30 p-5">
                 <h3 className={`${vt323.className} text-orange-400 text-xl mb-3`}>On-chain</h3>
                 <div className="w-full aspect-square bg-black/30 rounded-xl overflow-hidden mb-4 flex items-center justify-center">
@@ -289,7 +315,6 @@ export default function Hub() {
                 </div>
               </div>
 
-              {/* Lightning */}
               <div className="rounded-2xl border border-orange-500/30 p-5">
                 <h3 className={`${vt323.className} text-orange-400 text-xl mb-3`}>Lightning</h3>
                 <div className="w-full aspect-square bg-black/30 rounded-xl overflow-hidden mb-4 flex items-center justify-center">
@@ -324,3 +349,4 @@ export default function Hub() {
     </div>
   );
 }
+
