@@ -18,12 +18,6 @@ const BTN_STYLE = {
 const NPUB =
   "npub1hkprtpymah577g9vxcn6nyuj9jfckh3v3kmgvdaff5sesl0ase2sqn6jqu";
 
-const ONCHAIN_ADDR = "bc1qqwpakxryqet85ymppmthzsncmj283vclhr8uaj";
-const ONCHAIN_QR = "https://i.nostr.build/pyGFcBtbtS8lut0Z.jpg";
-
-const LIGHTNING_ADDR = "wildkangaroo21@primal.net";
-const LIGHTNING_QR = "https://i.nostr.build/xqRzAugn6Pa3B2LE.png";
-
 async function copyToClipboard(text: string) {
   try {
     if (navigator?.clipboard?.writeText) {
@@ -49,7 +43,6 @@ async function copyToClipboard(text: string) {
 
 export default function Hub() {
   const [showNostr, setShowNostr] = useState(false);
-  const [showDonate, setShowDonate] = useState(false);
   const [copied, setCopied] = useState<"npub" | "onchain" | "lightning" | null>(null);
 
   const handleCopy = async (text: string, which: "npub" | "onchain" | "lightning") => {
@@ -86,13 +79,14 @@ export default function Hub() {
               NOSTR
             </button>
 
-            <button
-              onClick={() => setShowDonate(true)}
-              className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
-              style={BTN_STYLE}
-            >
-              donate
-            </button>
+            <Link href="/support" target="_blank" rel="noopener noreferrer">
+              <button
+                className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
+                style={BTN_STYLE}
+              >
+                donate
+              </button>
+            </Link>
 
             <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
               <button
@@ -139,13 +133,15 @@ export default function Hub() {
             >
               NOSTR
             </button>
-            <button
-              onClick={() => setShowDonate(true)}
-              className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
-              style={BTN_STYLE}
-            >
-              donate
-            </button>
+
+            <Link href="/support" target="_blank" rel="noopener noreferrer">
+              <button
+                className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                style={BTN_STYLE}
+              >
+                donate
+              </button>
+            </Link>
 
             <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
               <button
@@ -190,13 +186,14 @@ export default function Hub() {
               >
                 NOSTR
               </button>
-              <button
-                onClick={() => setShowDonate(true)}
-                className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                donate
-              </button>
+              <Link href="/support" target="_blank" rel="noopener noreferrer">
+                <button
+                  className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
+                  style={BTN_STYLE}
+                >
+                  donate
+                </button>
+              </Link>
               <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
                 <button
                   className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
@@ -272,81 +269,6 @@ export default function Hub() {
           </div>
         </div>
       )}
-
-      {showDonate && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 md:p-8"
-          onClick={() => setShowDonate(false)}
-        >
-          <div
-            className="w-full max-w-4xl rounded-3xl bg-zinc-900 border border-orange-500/40 p-6 md:p-8 shadow-[0_0_48px_rgba(255,140,0,0.6)]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between mb-6">
-              <h2 className={`${vt323.className} text-orange-500 text-2xl md:text-3xl tracking-wide`}>
-                Support with Bitcoin
-              </h2>
-              <button
-                aria-label="Close"
-                onClick={() => setShowDonate(false)}
-                className="text-orange-400 hover:text-orange-300 text-xl"
-              >
-                ✕
-              </button>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="rounded-2xl border border-orange-500/30 p-5">
-                <h3 className={`${vt323.className} text-orange-400 text-xl mb-3`}>On-chain</h3>
-                <div className="w-full aspect-square bg-black/30 rounded-xl overflow-hidden mb-4 flex items-center justify-center">
-                  <img src={ONCHAIN_QR} alt="On-chain QR" className="object-contain w-full h-full" />
-                </div>
-                <div className="flex items-center gap-2">
-                  <code className="flex-1 break-all rounded-lg bg-black/40 px-3 py-2 text-orange-200 text-xs">
-                    {ONCHAIN_ADDR}
-                  </code>
-                  <button
-                    onClick={() => handleCopy(ONCHAIN_ADDR, "onchain")}
-                    className={`${vt323.className} shrink-0 px-3 py-2 rounded-lg text-black hover:scale-105 transition-all duration-300`}
-                    style={{ background: "linear-gradient(135deg, #ff6b35 0%, #f7931e 100%)" }}
-                  >
-                    {copied === "onchain" ? "Copied!" : "Copy"}
-                  </button>
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-orange-500/30 p-5">
-                <h3 className={`${vt323.className} text-orange-400 text-xl mb-3`}>Lightning</h3>
-                <div className="w-full aspect-square bg-black/30 rounded-xl overflow-hidden mb-4 flex items-center justify-center">
-                  <img src={LIGHTNING_QR} alt="Lightning QR" className="object-contain w-full h-full" />
-                </div>
-                <div className="flex items-center gap-2">
-                  <code className="flex-1 break-all rounded-lg bg-black/40 px-3 py-2 text-orange-200 text-xs">
-                    {LIGHTNING_ADDR}
-                  </code>
-                  <button
-                    onClick={() => handleCopy(LIGHTNING_ADDR, "lightning")}
-                    className={`${vt323.className} shrink-0 px-3 py-2 rounded-lg text-black hover:scale-105 transition-all duration-300`}
-                    style={{ background: "linear-gradient(135deg, #ff6b35 0%, #f7931e 100%)" }}
-                  >
-                    {copied === "lightning" ? "Copied!" : "Copy"}
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 flex justify-end">
-              <button
-                onClick={() => setShowDonate(false)}
-                className={`${vt323.className} px-5 py-2.5 rounded-lg text-orange-400 hover:text-orange-300 border border-orange-500/40`}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
-
