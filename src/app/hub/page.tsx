@@ -55,22 +55,15 @@ export default function Hub() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
-      <main className="flex flex-col items-center text-center space-y-8 max-w-[1200px] w-full">
-        <div className="relative transition-all duration-300">
-          <a href="/">
-            <Image
-              src="/finalmapleleaf.png"
-              alt="Maple Leaf"
-              width={170}
-              height={170}
-              className="rounded-lg"
-              priority
-            />
-          </a>
-        </div>
-
+      <main className="flex flex-col items-center text-center space-y-10 md:space-y-12 max-w-[1200px] w-full">
         <div className="w-full">
-          <div className="grid grid-cols-1 md:hidden gap-4">
+          <h1
+            className={`${greatVibes.className} mx-auto mb-6 md:mb-8 lg:mb-10 text-orange-500 leading-tight tracking-wide drop-shadow-[0_0_18px_rgba(255,140,0,0.6)] text-[2rem] md:text-[3.25rem] lg:text-[4rem]`}
+          >
+            Fix the money. Fix Canada.
+          </h1>
+
+          <div className="grid grid-cols-1 md:hidden gap-5">
             <button
               onClick={() => setShowNostr(true)}
               className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
@@ -125,7 +118,7 @@ export default function Hub() {
             </Link>
           </div>
 
-          <div className="hidden md:grid lg:hidden grid-cols-2 gap-4">
+          <div className="hidden md:grid lg:hidden grid-cols-2 gap-6">
             <button
               onClick={() => setShowNostr(true)}
               className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
@@ -178,7 +171,7 @@ export default function Hub() {
           </div>
 
           <div className="hidden lg:block">
-            <div className="grid grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-3 gap-6 mb-6">
               <button
                 onClick={() => setShowNostr(true)}
                 className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
@@ -204,7 +197,7 @@ export default function Hub() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-6">
               <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_4_Meetings">
                 <button
                   className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
@@ -231,6 +224,19 @@ export default function Hub() {
               </Link>
             </div>
           </div>
+        </div>
+
+        <div className="relative transition-all duration-300 mt-10">
+          <a href="/">
+            <Image
+              src="/finalmapleleaf.png"
+              alt="Maple Leaf"
+              width={127.5}
+              height={127.5}
+              className="rounded-lg"
+              priority
+            />
+          </a>
         </div>
       </main>
 
