@@ -71,7 +71,7 @@ export default function Hub() {
             <p>Free to use sound money</p>
             <p>Free to stand for what I think right</p>
             <p>Free to oppose what I believe is wrong</p>
-            <p>Free to choose those who govern my country</p>
+            <p>Free to choose those who governs my country</p>
             <p className="mt-1">This heritage of freedom I pledge to uphold for myself and all mankind</p>
           </div>
 
