@@ -72,12 +72,12 @@ export default function Hub() {
               NOSTR
             </button>
 
-            <Link href="/support" target="_blank" rel="noopener noreferrer">
+            <Link href="/podcast">
               <button
                 className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
-                donate
+                podcast
               </button>
             </Link>
 
@@ -127,12 +127,12 @@ export default function Hub() {
               NOSTR
             </button>
 
-            <Link href="/support" target="_blank" rel="noopener noreferrer">
+            <Link href="/podcast">
               <button
                 className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
-                donate
+                podcast
               </button>
             </Link>
 
@@ -179,12 +179,12 @@ export default function Hub() {
               >
                 NOSTR
               </button>
-              <Link href="/support" target="_blank" rel="noopener noreferrer">
+              <Link href="/podcast">
                 <button
                   className={`${vt323.className} w-full px-6 py-3 text-white text-xl rounded-lg hover:scale-105 transition-all duration-300`}
                   style={BTN_STYLE}
                 >
-                  donate
+                  podcast
                 </button>
               </Link>
               <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
@@ -223,6 +223,7 @@ export default function Hub() {
                 </button>
               </Link>
             </div>
+
           </div>
         </div>
 
@@ -237,6 +238,17 @@ export default function Hub() {
               priority
             />
           </a>
+        </div>
+
+        <div className="w-full max-w-xs mx-auto">
+          <Link href="/support" target="_blank" rel="noopener noreferrer">
+            <button
+              className={`${vt323.className} w-full px-6 py-3 text-white text-lg rounded-lg hover:scale-105 transition-all duration-300 mt-6`}
+              style={BTN_STYLE}
+            >
+              donate
+            </button>
+          </Link>
         </div>
       </main>
 
