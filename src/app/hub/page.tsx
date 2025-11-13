@@ -57,11 +57,23 @@ export default function Hub() {
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
       <main className="flex flex-col items-center text-center space-y-10 md:space-y-12 max-w-[1200px] w-full">
         <div className="w-full">
-          <h1
+        <h1
             className={`${greatVibes.className} mx-auto mb-6 md:mb-8 lg:mb-10 text-orange-500 leading-tight tracking-wide drop-shadow-[0_0_18px_rgba(255,140,0,0.6)] text-[2rem] md:text-[3.25rem] lg:text-[4rem]`}
           >
             Fix the money. Fix Canada.
           </h1>
+          <div className={`${vt323.className} text-white text-lg md:text-xl lg:text-2xl leading-relaxed mb-8 md:mb-10 max-w-2xl mx-auto space-y-2`}>
+            <p>I am Canadian</p>
+            <p>A free Canadian</p>
+            <p>Free to speak without fear</p>
+            <p>Free to worship God in my own way</p>
+            <p>Free to transact without censorship</p>
+            <p>Free to use sound money</p>
+            <p>Free to stand for what I think right</p>
+            <p>Free to oppose what I believe is wrong</p>
+            <p>Free to choose those who govern my country</p>
+            <p className="mt-4">This heritage of freedom I pledge to uphold for myself and all mankind</p>
+          </div>
 
           <div className="grid grid-cols-1 md:hidden gap-5">
             <button
