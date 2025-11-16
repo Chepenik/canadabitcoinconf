@@ -77,7 +77,7 @@ export default function Hub() {
           <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-md mx-auto">
             <button
               onClick={() => setShowNostr(true)}
-              className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
+              className={`${vt323.className} w-full px-[1.275rem] py-[0.85rem] md:px-[1.7rem] md:py-[1.0625rem] text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
               style={BTN_STYLE}
             >
               nostr
@@ -85,7 +85,7 @@ export default function Hub() {
 
             <Link href="/podcast">
               <button
-                className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
+                className={`${vt323.className} w-full px-[1.275rem] py-[0.85rem] md:px-[1.7rem] md:py-[1.0625rem] text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
                 podcast
@@ -94,7 +94,7 @@ export default function Hub() {
 
             <Link href="https://github.com/Canadian-Orange-Party/governanceOS">
               <button
-                className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
+                className={`${vt323.className} w-full px-[1.275rem] py-[0.85rem] md:px-[1.7rem] md:py-[1.0625rem] text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
                 repo
@@ -103,7 +103,7 @@ export default function Hub() {
 
             <Link href="/support">
               <button
-                className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
+                className={`${vt323.className} w-full px-[1.275rem] py-[0.85rem] md:px-[1.7rem] md:py-[1.0625rem] text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
                 donate
