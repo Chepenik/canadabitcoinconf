@@ -10,7 +10,6 @@ const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 const BTN_STYLE = {
   background: "linear-gradient(135deg, #ff6b35 0%, #f7931e 100%)",
-  height: "40px",
   letterSpacing: "-0.02em",
   filter: "drop-shadow(0 4px 8px rgba(255, 107, 53, 0.4))",
 } as const;
@@ -55,14 +54,14 @@ export default function Hub() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-6">
-      <main className="flex flex-col items-center text-center space-y-3 md:space-y-4 max-w-[1200px] w-full">
+      <main className="flex flex-col items-center text-center space-y-4 md:space-y-6 max-w-[1200px] w-full">
         <div className="w-full">
         <h1
-            className={`${greatVibes.className} mx-auto mb-2 md:mb-3 text-orange-500 leading-tight tracking-wide drop-shadow-[0_0_18px_rgba(255,140,0,0.6)] text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]`}
+            className={`${greatVibes.className} mx-auto mb-4 md:mb-6 text-orange-500 leading-tight tracking-wide drop-shadow-[0_0_18px_rgba(255,140,0,0.6)] text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem]`}
           >
             Fix the money. Fix Canada.
           </h1>
-          <div className={`${vt323.className} text-white text-sm md:text-base lg:text-lg leading-tight mb-3 md:mb-4 max-w-2xl mx-auto space-y-0`}>
+          <div className={`${vt323.className} text-white text-lg md:text-xl lg:text-2xl leading-tight mb-6 md:mb-8 max-w-3xl mx-auto space-y-0`}>
             <p>I am Canadian</p>
             <p>A free Canadian</p>
             <p>Free to speak without fear</p>
@@ -75,171 +74,45 @@ export default function Hub() {
             <p className="mt-1">This heritage of freedom I pledge to uphold for myself and all mankind</p>
           </div>
 
-          <div className="grid grid-cols-1 md:hidden gap-2">
+          <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-md mx-auto">
             <button
               onClick={() => setShowNostr(true)}
-              className={`${vt323.className} w-full px-4 py-2 text-white text-sm rounded-lg hover:scale-105 transition-all duration-300`}
+              className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
               style={BTN_STYLE}
             >
-              NOSTR
+              nostr
             </button>
 
             <Link href="/podcast">
               <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-sm rounded-lg hover:scale-105 transition-all duration-300`}
+                className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
                 podcast
               </button>
             </Link>
 
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
+            <Link href="https://github.com/Canadian-Orange-Party/governanceOS">
               <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-sm rounded-lg hover:scale-105 transition-all duration-300`}
+                className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
-                protocols
+                repo
               </button>
             </Link>
 
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_4_Meetings">
+            <Link href="/support">
               <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-sm rounded-lg hover:scale-105 transition-all duration-300`}
+                className={`${vt323.className} w-full px-6 py-4 md:px-8 md:py-5 text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
               >
-                meetings
+                donate
               </button>
             </Link>
-
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_2_Proposals">
-              <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-sm rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                proposals
-              </button>
-            </Link>
-
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_3_Projects">
-              <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-sm rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                projects
-              </button>
-            </Link>
-          </div>
-
-          <div className="hidden md:grid lg:hidden grid-cols-2 gap-3">
-            <button
-              onClick={() => setShowNostr(true)}
-              className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-              style={BTN_STYLE}
-            >
-              NOSTR
-            </button>
-
-            <Link href="/podcast">
-              <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                podcast
-              </button>
-            </Link>
-
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
-              <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                protocols
-              </button>
-            </Link>
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_4_Meetings">
-              <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                meetings
-              </button>
-            </Link>
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_2_Proposals">
-              <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                proposals
-              </button>
-            </Link>
-            <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_3_Projects">
-              <button
-                className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                projects
-              </button>
-            </Link>
-          </div>
-
-          <div className="hidden lg:block">
-            <div className="grid grid-cols-3 gap-3 mb-3">
-              <button
-                onClick={() => setShowNostr(true)}
-                className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                style={BTN_STYLE}
-              >
-                NOSTR
-              </button>
-              <Link href="/podcast">
-                <button
-                  className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                  style={BTN_STYLE}
-                >
-                  podcast
-                </button>
-              </Link>
-              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_1_Protocols">
-                <button
-                  className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                  style={BTN_STYLE}
-                >
-                  protocols
-                </button>
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-3 gap-3">
-              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_4_Meetings">
-                <button
-                  className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                  style={BTN_STYLE}
-                >
-                  meetings
-                </button>
-              </Link>
-              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_2_Proposals">
-                <button
-                  className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                  style={BTN_STYLE}
-                >
-                  proposals
-                </button>
-              </Link>
-              <Link href="https://github.com/Canadian-Orange-Party/governanceOS/blob/main/S_3_Projects">
-                <button
-                  className={`${vt323.className} w-full px-4 py-2 text-white text-base rounded-lg hover:scale-105 transition-all duration-300`}
-                  style={BTN_STYLE}
-                >
-                  projects
-                </button>
-              </Link>
-            </div>
-
           </div>
         </div>
 
-        <div className="relative transition-all duration-300 mt-3 md:mt-4">
+        <div className="relative transition-all duration-300 mt-4 md:mt-6">
           <a href="/">
             <Image
               src="/finalmapleleaf.png"
@@ -250,17 +123,6 @@ export default function Hub() {
               priority
             />
           </a>
-        </div>
-
-        <div className="w-full max-w-xs mx-auto">
-          <Link href="/support" target="_blank" rel="noopener noreferrer">
-            <button
-              className={`${vt323.className} w-full px-4 py-2 text-white text-sm rounded-lg hover:scale-105 transition-all duration-300 mt-2`}
-              style={BTN_STYLE}
-            >
-              donate
-            </button>
-          </Link>
         </div>
       </main>
 
