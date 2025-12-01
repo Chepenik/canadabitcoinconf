@@ -83,7 +83,7 @@ export default function Hub() {
               nostr
             </button>
 
-            <Link href="/podcast">
+            <Link href="https://canadianorangepodcast.com/">
               <button
                 className={`${vt323.className} w-full px-[1.275rem] py-[0.85rem] md:px-[1.7rem] md:py-[1.0625rem] text-white text-lg md:text-xl lg:text-2xl rounded-lg hover:scale-105 transition-all duration-300`}
                 style={BTN_STYLE}
