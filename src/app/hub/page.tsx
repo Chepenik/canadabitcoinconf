@@ -113,7 +113,7 @@ export default function Hub() {
         </div>
 
         <div className="relative transition-all duration-300 mt-4 md:mt-6">
-          <a href="/">
+          <a href="https://github.com/Canadian-Orange-Party/governanceOS">
             <Image
               src="/finalmapleleaf.png"
               alt="Maple Leaf"
